@@ -49,3 +49,12 @@ TEST_P(string_calculator_add_Parameter_Fixture,when_passed_a_single_Or_Multiple_
   //Assert
   ASSERT_EQ(actualSum,expectedsum);
 }
+TEST_P(string_calculator_add_Parameter_Fixture,when_passed_a_single_Or_Multiple_Number_with_Delimiters_returns_Sub){
+ //Arrange
+  string input=std::get<0>(GetParam());
+  int expectedSub=std::get<1>(GetParam());
+  //Act
+  int actualSub=calculator.Sub(input);
+  //Assert
+  ASSERT_EQ(actualSum,expectedsub);
+}
