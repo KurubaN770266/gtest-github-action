@@ -56,5 +56,5 @@ TEST_P(string_calculator_add_Parameter_Fixture,when_passed_a_single_Or_Multiple_
   //Act
   int actualSub=calculator.Sub(input);
   //Assert
-  ASSERT_EQ(actualSum,expectedsub);
+  ASSERT_EQ(actualSub,expectedsub);
 }
